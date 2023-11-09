@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="logics.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>API of products</h1>
+    <div class="mb-3">
+        <label for="name" class="form-label">Enter Name of the product</label>
+        <input type="text" class="form-control" id="name" placeholder="" autocomplete="name">
+      </div>
+      <div class="mb-3">
+        <label for="price" class="form-label">Enter price of the product</label>
+        <input type="text" class="form-control" id="price" placeholder="" autocomplete="price">
+      </div>
+    <button class="button btn-info btn-md" id="addBtn">Add Products</button>
+    <div id="Append">Loading ....</div>
+</body>
+</html>
