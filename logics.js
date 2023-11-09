@@ -9,17 +9,22 @@ function addData() {
   console.log('Add check');
   const name = $('#name').val();
   const price = $('#price').val();
-  $.ajax({
-    url: 'https://usman-fake-api.herokuapp.com/api/products',
-    method: 'POST',
-    data: { name, price },
-    success(res) {
-      alert('Added Successfully!');
-      loadProducts();
-    },
-  });
+  if(name === "" || price === ""){
+    alert("Please fill all fields!!");
+  }
+  else{
+    $.ajax({
+      url: 'https://usman-fake-api.herokuapp.com/api/products',
+      method: 'POST',
+      data: { name, price },
+      success: function() {
+        alert('Added Successfully!');
+        loadProducts();
+      },
+    });
+  }
 }
-
+  
 function loadProducts() {
   $.ajax(
     {
